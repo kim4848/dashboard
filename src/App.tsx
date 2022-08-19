@@ -8,7 +8,7 @@ function App() {
     <div className="App">      
       <Button onClick={()=>{setCount(count+1)}} variant="outlined">Test</Button>
       <div>
-      {count}
+      Count: {count}
       </div>
     </div>
   );
