@@ -50,13 +50,14 @@ export default function Menu(open: MenuState) {
   return (
     <div>
       <React.Fragment>
-        <IconButton onClick={() => setShowMenu(true)}>
+        <IconButton color="secondary" onClick={() => setShowMenu(true)}>
           <MenuIcon></MenuIcon>
         </IconButton>
         <Drawer anchor={"left"} open={showMenu}>
           {" "}
           <Divider></Divider>
           <IconButton
+            color="secondary"
             sx={{ width: 50, height: 50 }}
             size="small"
             onClick={() => setShowMenu(false)}
